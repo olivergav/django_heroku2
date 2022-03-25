@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 INTERNAL_IPS = ALLOWED_HOSTS
 
 
@@ -136,7 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = ('https://pacific-harbor-28495.herokuapp.com/',)
 
-
 import django_on_heroku
-django_on_heroku.settings(locals())
+
+# django_on_heroku.settings(locals())
 
