@@ -25,7 +25,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get('DEBUG', default=0))
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
+INTERNAL_IPS = ALLOWED_HOSTS
 
 
 # Application definition
@@ -132,6 +133,8 @@ STATICFILES_FINDERS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ('https://pacific-harbor-28495.herokuapp.com/')
 
 
 import django_on_heroku
