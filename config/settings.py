@@ -134,7 +134,7 @@ STATICFILES_FINDERS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ('https://pacific-harbor-28495.herokuapp.com/')
+CSRF_TRUSTED_ORIGINS = ('https://pacific-harbor-28495.herokuapp.com/',)
 
 
 import django_on_heroku
