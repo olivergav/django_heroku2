@@ -138,5 +138,5 @@ CSRF_TRUSTED_ORIGINS = ('https://pacific-harbor-28495.herokuapp.com/',)
 
 import django_on_heroku
 
-# django_on_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
